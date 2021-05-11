@@ -1,0 +1,10 @@
+<ul>
+  <% @events.each do |event| %>
+    <li>
+    <strong> <%= event.name %></strong>
+             in <%= event.location %>
+             Headcount: <%= event.headcount %>
+         
+    </li>
+  <% end %>
+</ul>
