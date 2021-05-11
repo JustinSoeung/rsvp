@@ -4,13 +4,16 @@
       
     <strong> <%= event.name %></strong>
              in <%= event.location %>
-             Headcount: <%= event.headcount %>     
+             headcount: <%= headcount(event) %>
     </li>
+
     <p>
-      <%= event.description %>
+      <%= truncate(event.description, length: 35, separator: ' ') %>
     </p>
+
     <p>
-      <%= event.starts_at %>
+    <%= event.starts_at.strftime("%B %d at %I:%M %P") %>
     </p>
+
   <% end %>
 </ul>
