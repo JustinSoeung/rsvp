@@ -1,10 +1,16 @@
 <ul>
   <% @events.each do |event| %>
     <li>
+      
     <strong> <%= event.name %></strong>
              in <%= event.location %>
-             Headcount: <%= event.headcount %>
-         
+             Headcount: <%= event.headcount %>     
     </li>
+    <p>
+      <%= event.description %>
+    </p>
+    <p>
+      <%= event.starts_at %>
+    </p>
   <% end %>
 </ul>
