@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h1>Wedding Events</h1>
+    <header>
+
+    <div class="content">
+     <%= yield %>
+    </div>
+
+    <footer>
+      <p>
+        Made by Justin Soeung
+         &copy; <%= Time.now.year %>
+      </p>
+    </footer>
+
   </body>
 </html>
